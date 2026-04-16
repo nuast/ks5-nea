@@ -1,26 +1,54 @@
 # Requirements Specification
 
-Define clear, numbered requirements with evidence and stakeholder links. Group requirements logically (for example by module).
+This is the backbone of your project. Every requirement should come from evidence.
 
-- Is each requirement specific and testable?
-- Why is each requirement needed?
-- What evidence source supports it?
-- Which stakeholder requested or validated it?
+## What a good requirement looks like
 
-> Weak practice warning: avoid vague requirements such as "good UI" or "easy to use" without measurable detail.
+A requirement should be:
 
-## Requirement groups
+- specific
+- testable
+- justified
+- linked to research and stakeholder evidence
+- numbered (R1, R2, R3...)
 
-### Functional requirements
+Use: [Requirements Template](templates/requirements-template.md)
 
-| ID | Description | Why needed | Evidence source | Linked stakeholder | Priority |
-|---|---|---|---|---|---|
-| R1 |  |  |  |  | Must |
-| R2 |  |  |  |  | Should |
+## Recommended requirement format
 
-### Non-functional requirements
+| ID | Requirement | Type | Priority | Stakeholder(s) | Evidence source | Justification |
+|---|---|---|---|---|---|---|
+| R1 | The system shall prevent duplicate equipment loans for the same item at the same time. | Functional | Must | PE staff | Interview 2026-10-03, Survey Q4 | Duplicate loans were identified as the main operational issue. |
 
-| ID | Description | Why needed | Evidence source | Linked stakeholder | Priority |
-|---|---|---|---|---|---|
-| N1 |  |  |  |  | Must |
-| N2 |  |  |  |  | Should |
+## Model requirement entry
+
+- **ID:** R2  
+- **Requirement:** The system shall allow staff to search loan records by student surname and return all matches within 2 seconds for a dataset of at least 500 records.  
+- **Type:** Functional + performance  
+- **Priority:** Must  
+- **Stakeholder(s):** PE staff lead  
+- **Evidence:** Interview notes + existing product research  
+- **Justification:** Staff currently lose lesson time manually checking paper records.
+
+## Weak vs strong requirements
+
+### Weak
+
+- “Good UI”
+- “Fast search”
+- “Secure system”
+
+### Strong
+
+- “Users can complete new booking in 4 inputs or fewer.”
+- “Search returns matching records in under 2 seconds for 500 records.”
+- “Only authenticated staff accounts can edit records.”
+
+## Requirement quality checks
+
+Before moving on, check each requirement:
+
+- Is it clear enough to test later?
+- Can I point to evidence for it?
+- Is the scope realistic for my NEA?
+- Have I avoided duplicate or overlapping requirements?

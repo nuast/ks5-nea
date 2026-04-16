@@ -1,16 +1,41 @@
 # Success Criteria
 
-Create measurable success criteria linked to requirement IDs. These criteria are used later for objective evaluation.
+Success criteria are how you prove your final system succeeded.
 
-- Is each criterion measurable?
-- What evidence will prove it is met?
-- Which requirement ID does it link to?
+## Why this matters
 
-> Warning: criteria like "easy to use" are too vague unless you define measurable evidence (for example stakeholder task completion rate/time/errors).
+If criteria are vague now, evaluation will be weak later.
 
-## Criteria table
+## Make criteria measurable
 
-| Criterion ID | Linked requirement ID(s) | Measurable criterion | How it will be measured | Evidence needed |
+Each criterion should include:
+
+- a clear condition
+- a measurable threshold (time/count/percentage/pass condition)
+- how it will be tested
+- linked requirement ID(s)
+
+## Vague vs measurable
+
+### Vague
+
+- The system should be easy to use.
+- The program should run quickly.
+
+### Measurable
+
+- A trained staff user can add a new record in **30 seconds or less**.
+- Search returns results in **under 2 seconds** for **500 records**.
+- Duplicate booking attempts are blocked in **100% of test cases**.
+
+## Example criteria table
+
+| SC ID | Linked requirement(s) | Measurable criterion | Test method | Evidence needed |
 |---|---|---|---|---|
-| SC1 | R1 |  |  |  |
-| SC2 | R2 |  |  |  |
+| SC1 | R1 | Duplicate entries are blocked in 100% of normal and boundary test cases. | System tests ST-04 to ST-09 | Test logs + screenshots |
+| SC2 | R2 | User can retrieve a record by surname in under 2 seconds for 500 records. | Timed performance test | Timed test table |
+| SC3 | R3 | 4 out of 5 stakeholder tasks are completed without help by 80% of test users. | Usability test | Task completion sheet |
+
+## Final check before leaving Analysis
+
+Use: [Success Criteria Checklist](templates/success-criteria-checklist.md)
